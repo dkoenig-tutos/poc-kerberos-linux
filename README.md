@@ -131,3 +131,22 @@ $ vagrant --version
 Vagrant 2.2.16
 ```
 
+```
+$ vagrant plugin install vagrant-hosts
+$ vagrant plugin install vagrant-share
+$ vagrant plugin install vagrant-vbox-snapshot
+$ vagrant plugin install vagrant-host-shell
+$ vagrant plugin install vagrant-reload
+```
+
+```
+$ vagrant plugin list
+```
+
+```
+vagrant-host-shell (0.0.4, global)
+vagrant-hosts (2.9.0, global)
+vagrant-reload (0.0.1, global)
+vagrant-share (1.1.11, global)
+vagrant-vbox-snapshot (0.0.10, global)
+```
