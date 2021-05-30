@@ -65,9 +65,21 @@ Drapaux :                               fpu vme de pse tsc msr pae mce cx8 apic
                                         s hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
 ```
 
+```
+$ free -h
+```
+
+```
+                           total        utilisé     libre       partagé      tamp/cache   disponible
+Mem:                       31Gi         8,0Gi       7,6Gi       408Mi        15Gi         22Gi
+Partition d'échange:       2,0Gi        0B          2,0Gi
+```
+
 Installation de Visual Studio Code
 
 ```
+
+
 $ code --version
 ```
 
@@ -80,11 +92,23 @@ x64
 Installation de Git
 
 ```
+$ sudo add-apt-repository -y ppa:git-core/ppa
+$ sudo apt update
+$ sudo apt install -y git
+
 $ git --version
 ```
 
 ```
 git version 2.31.1
+```
+
+Configuration de Git
+
+```
+$ git config --global user.name "dkoenig-tutos"
+$ git config --global user.email dkoenig.tutos@gmail.com
+$ git config --list --show-origin
 ```
 
 Installation de Oracle VM VirtualBox
