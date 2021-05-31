@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
     kerberos_server_config.vm.network "private_network", ip: "10.0.9.11", :netmask => "255.255.255.0", virtualbox__intnet: "intnet1"
 
     kerberos_server_config.vm.provider "virtualbox" do |vb|
-      vb.gui = true
+      vb.gui = false
       vb.memory = "1024"
       vb.cpus = 2
       vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
@@ -28,7 +28,7 @@ Vagrant.configure(2) do |config|
     nfs_storage_config.vm.network "private_network", ip: "10.0.9.12", :netmask => "255.255.255.0", virtualbox__intnet: "intnet1"
 
     nfs_storage_config.vm.provider "virtualbox" do |vb|
-      vb.gui = true
+      vb.gui = false
       vb.memory = "1024"
       vb.cpus = 2
       vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
@@ -47,7 +47,7 @@ Vagrant.configure(2) do |config|
     nfs_client_config.vm.network "private_network", ip: "10.0.9.13", :netmask => "255.255.255.0", virtualbox__intnet: "intnet1"
 
     nfs_client_config.vm.provider "virtualbox" do |vb|
-      vb.gui = true
+      vb.gui = false
       vb.memory = "1024"
       vb.cpus = 2
       vb.name = "centos7_kerberos_nfs_client"
