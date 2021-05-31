@@ -75,20 +75,6 @@ Mem:                       31Gi         8,0Gi       7,6Gi       408Mi        15G
 Partition d'échange:       2,0Gi        0B          2,0Gi
 ```
 
-Installation de Visual Studio Code
-
-```
-
-
-$ code --version
-```
-
-```
-1.56.2
-054a9295330880ed74ceaedda236253b4f39a335
-x64
-```
-
 Installation de Git
 
 ```
