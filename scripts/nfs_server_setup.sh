@@ -3,7 +3,7 @@
 set -ex
 
 echo '##########################################################################'
-echo '##### Script de configuration serveur NFS : nfs_server_setup.sh'
+echo '##### Script de configuration du serveur NFS : nfs_server_setup.sh'
 echo '##########################################################################'
 
 
