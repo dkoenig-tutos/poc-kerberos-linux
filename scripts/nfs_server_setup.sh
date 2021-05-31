@@ -37,7 +37,7 @@ quit
 EOF
 
 # Faire 'man exports' pour voir des exemples de configurations 
-#echo '/nfs/export_ro  *(sync)' > /etc/exports
+# echo '/nfs/export_ro  *(sync)' > /etc/exports
 echo '/nfs/export_rw  *(rw,no_root_squash,sec=krb5)' >> /etc/exports
 
 systemctl start nfs-server
