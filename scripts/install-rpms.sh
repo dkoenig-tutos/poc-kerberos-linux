@@ -14,8 +14,6 @@ yum install -y man-pages
 yum install -y bash-completion-extras
 yum install -y mtr
 
-
-
 # Désactivation de SELINUX. 
 sed -i 's/SELINUX=permissive/SELINUX=disabled/g' /etc/selinux/config
 setenforce enforcing
