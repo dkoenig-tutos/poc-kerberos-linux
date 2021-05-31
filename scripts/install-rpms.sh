@@ -4,7 +4,7 @@ set -ex
 
 
 echo '##########################################################################'
-echo '##### About to run install-rpms.sh script ##################'
+echo '##### Script initial et commun à toutes les machines : install-rpms.sh'
 echo '##########################################################################'
 
 yum install -y epel-release 
@@ -16,7 +16,7 @@ yum install -y mtr
 
 
 
-# Do a few more stuff. 
+# Désactivation de SELINUX. 
 sed -i 's/SELINUX=permissive/SELINUX=disabled/g' /etc/selinux/config
 setenforce enforcing
 
