@@ -19,7 +19,7 @@ cp /var/kerberos/krb5kdc/kdc.conf /var/kerberos/krb5kdc/kdc.conf-orig
 
 sed -i s/EXAMPLE.COM/DKOENIG.INFRA/g /var/kerberos/krb5kdc/kdc.conf
 
-# make it only kerberos5 compatible and not backward compatible. 
+# Rendre le KDC uniquement compatible Kerberos 5 sans possibilité de rétrocompatibilité.
 sed -i s/#master_key_type/master_key_type/g /var/kerberos/krb5kdc/kdc.conf
 sed -i '/master_key_type/a \ \ default_principal_flags = +preauth' /var/kerberos/krb5kdc/kdc.conf
 
